@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Desafio",
+        "description": "Documentação da API",
+        "version": "1.0.0",
+        "contact": {
+            "email": "cainan@gmail.com"
+        }
+    },
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": ["Usuário"],
+                "sumary": "Criar usuário",
+                "description": "Criar um novo usuário",
+                "requestBody": {
+                    "content": {
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "properties":{
+                                    "name":{
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example":{
+                                    "name":"Carlos",
+                                    "description":"carlos@email.com"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
